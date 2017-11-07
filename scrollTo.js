@@ -1,4 +1,4 @@
-export function scrollTo(element, to, duration) {
+function scrollTo(element, to, duration) {
     if (duration <= 0) return
     const difference = to - element.scrollTop
     const perTick = difference / duration * 10
@@ -8,3 +8,4 @@ export function scrollTo(element, to, duration) {
         scrollTo(element, to, duration - 10)
     }, 10)
 }
+module.exports = scrollTo
