@@ -1,0 +1,26 @@
+{
+  "name": "outils",
+  "version": "1.0.0",
+  "description": "前端业务代码库",
+  "main": "min/outils.min.js",
+  "scripts": {
+    "build": "node script/build.js",
+    "test": "npm run test"
+  },
+  "keywords": [
+    "util",
+    "tool",
+    "common-util"
+  ],
+  "author": "SlaneYang",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "chalk": "^2.3.0",
+    "ora": "^1.3.0",
+    "rimraf": "^2.6.2",
+    "webpack": "^3.8.1"
+  }
+}
