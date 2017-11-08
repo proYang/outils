@@ -13,7 +13,7 @@
 ``` html
   <script src="outils.min.js"></script>
   <script>
-      var param = outils.getQueryObject('http://www.baidu.com?a=1&b=2')
+      var param = outils.getQuery('http://www.baidu.com?a=1&b=2')
   </script>
 ```
 
@@ -28,6 +28,6 @@ webpack、RequireJS、NodeJS等
 const outils = require('outils')
 
 // 只引入部分方法
-const getQueryObject = require('outils/getQueryObject')
+const getQuery = require('outils/getQuery')
 ```
 ## Api
