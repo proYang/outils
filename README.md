@@ -13,7 +13,7 @@
 ``` html
   <script src="outils.min.js"></script>
   <script>
-      var param = outils.getQuery('http://www.baidu.com?a=1&b=2')
+      var OS = outils.getOS()
   </script>
 ```
 
@@ -23,11 +23,16 @@ $ npm install --save-dev outils
 ```
 
 webpack、RequireJS、NodeJS等
+
 ``` javascript
 // 完整引入
 const outils = require('outils')
+var OS = outils.getOS()
+```
 
+``` javascript
 // 只引入部分方法
-const getQuery = require('outils/getQuery')
+const getOS = require('outils/getOS')
+var OS = getOS()
 ```
 ## Api
