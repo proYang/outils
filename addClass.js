@@ -1,8 +1,8 @@
 /**
  * 
- * @desc 为元素添加class
- * @param {HTMLElement} ele 
- * @param {String} cls 
+ * @desc   为元素添加class
+ * @param  {HTMLElement} ele 
+ * @param  {String} cls 
  */
 
 var hasClass = require('./hasClass');
