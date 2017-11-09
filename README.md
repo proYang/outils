@@ -22,7 +22,7 @@ npm:
 $ npm install --save-dev outils
 ```
 
-webpack、RequireJS、NodeJS等
+webpack、RequireJS、SeaJS等
 
 ``` javascript
 // 完整引入
