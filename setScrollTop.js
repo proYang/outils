@@ -7,4 +7,4 @@ function setScrollTop(value) {
     return value;
 }
 
-module.exports = setDocumentScrollTop;
+module.exports = setScrollTop;
