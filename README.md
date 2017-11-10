@@ -36,55 +36,57 @@ const getOS = require('outils/getOS')
 var OS = getOS()
 ```
 ## Api
-├─array  
-│      arrayEqual  
-│      
-├─class  
-│      addClass  
-│      hasClass  
-│      removeClass  
-│      
-├─cookie  
-│      getCookie  
-│      removeCookie  
-│      setCookie  
-│      
-├─device  
-│      getExplore  
-│      getOS  
-│      
-├─dom  
-│      getScrollTop  
-│      offset  
-│      scrollTo  
-│      setScrollTop  
-│      
-├─keycode  
-│      getKeyName  
-│      
-├─object  
-│      deepClone  
-│      
-├─random  
-│      randomColor  
-│      randomNum  
-│      
-├─regexp  
-│      isEmail  
-│      isIdCard  
-│      isPhoneNum  
-│      isUrl  
-│      
-├─string  
-│      digitUppercase  
-|
-├─support
-│      isSupportWebP
-│      
-├─time  
-│      formatPassTime  
-│      formatRemainTime  
-│      
-└─url
-        parseQueryString  
-        stringfyQueryString   
+
+### Array  
+#### [arrayEqual]()  
+
+### Class
+#### [addClass]()  
+#### [hasClass]()  
+#### [removeClass]()  
+
+### Cookie 
+#### [getCookie]()  
+#### [removeCookie]()  
+#### [setCookie]()  
+
+### Device  
+#### [getExplore]()  
+#### [getOS]()  
+
+### Dom  
+#### [getScrollTop]()  
+#### [offset]()  
+#### [scrollTo]()  
+#### [setScrollTop]()  
+
+### Keycode  
+#### [getKeyName]()  
+
+### Object  
+#### [deepClone]()  
+
+### Random  
+#### [randomColor]()  
+#### [randomNum]()  
+
+### Regexp  
+#### [isEmail]()  
+#### [isIdCard]()  
+#### [isPhoneNum]()  
+#### [isUrl]()  
+
+### String  
+#### [digitUppercase]()  
+
+### Support  
+#### [isSupportWebP]()  
+#### 
+
+### Time  
+#### [formatPassTime]()  
+#### [formatRemainTime]()  
+
+### Url
+#### [parseQueryString]()  
+#### [stringfyQueryString]()  
