@@ -19,7 +19,7 @@ function deepClone(values) {
     if (values instanceof Array) {
         copy = [];
         for (var i = 0, len = values.length; i < len; i++) {
-            copy[i] = cloneDeep(values[i]);
+            copy[i] = deepClone(values[i]);
         }
         return copy;
     }
@@ -28,7 +28,7 @@ function deepClone(values) {
     if (values instanceof Object) {
         copy = {};
         for (var attr in values) {
-            if (values.hasOwnProperty(attr)) copy[attr] = cloneDeep(values[attr]);
+            if (values.hasOwnProperty(attr)) copy[attr] = deepClone(values[attr]);
         }
         return copy;
     }

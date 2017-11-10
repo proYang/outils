@@ -10,31 +10,30 @@ var requestAnimFrame = (function () {
 })();
 /**
  * 
- * @desc  在${duration}时间内，滚动条平滑滚动到指定位置
+ * @desc  在${duration}时间内，滚动条平滑滚动到${to}指定位置
  * @param {Number} to 
  * @param {Number} duration 
  */
 function scrollTo(to, duration) {
-    var to = 0;
-    var duration = 16;
-
-    if (duration < 0) return
+    if (duration < 0) {
+        setScrollTop(to);
+        return
+    }
     var diff = to - getScrollTop();
     if (diff === 0) return
-    var perTick = diff / duration * 10;
+    var step = diff / duration * 10;
     requestAnimationFrame(
         function () {
-            if (Math.abs(perTick) > Math.abs(diff)) {
+            if (Math.abs(step) > Math.abs(diff)) {
                 setScrollTop(getScrollTop() + diff);
                 return;
             }
-            setScrollTop(getScrollTop() + perTick);
+            setScrollTop(getScrollTop() + step);
             if (diff > 0 && getScrollTop() >= to || diff < 0 && getScrollTop() <= to) {
                 return;
             }
             scrollTo(to, duration - 16);
         });
-
 }
 
 module.exports = scrollTo;

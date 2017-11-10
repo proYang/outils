@@ -18,7 +18,7 @@ function formatRemainTime(endTime) {
         m = Math.floor(t / 1000 / 60 % 60);
         s = Math.floor(t / 1000 % 60);
     }
-    return d + "天 " + h + "小时 " + m + " 分钟" + s + " 秒";
+    return d + "天 " + h + "小时 " + m + "分钟 " + s + "秒";
 }
 
 module.exports = formatRemainTime

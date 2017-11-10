@@ -14,8 +14,6 @@ const setCookie = require('./cookie/setCookie')
 const getOS = require('./device/getOS')
 const getExplore = require('./device/getExplore')
 
-const getClientHeight = require('./dom/getClientHeight')
-const getClientWidth = require('./dom/getClientWidth')
 const getScrollTop = require('./dom/getScrollTop')
 const offset = require('./dom/offset')
 const scrollTo = require('./dom/scrollTo')
@@ -56,8 +54,6 @@ module.exports = {
     getOS,
     getExplore,
 
-    getClientHeight,
-    getClientWidth,
     getScrollTop,
     offset,
     scrollTo,
