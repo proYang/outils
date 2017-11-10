@@ -33,6 +33,8 @@ const isUrl = require('./regexp/isUrl')
 
 const digitUppercase = require('./string/digitUppercase')
 
+const isSupportWebP = require('./support/isSupportWebP')
+
 const formatPassTime = require('./time/formatPassTime')
 const formatRemainTime = require('./time/formatRemainTime')
 
@@ -72,6 +74,8 @@ module.exports = {
     isUrl,
 
     digitUppercase,
+
+    isSupportWebP,
 
     formatPassTime,
     formatRemainTime,

@@ -3,7 +3,7 @@
 
 > 目的：高效率完成前端业务代码
 
-业务开发过程中，会经常用到**日期格式化**、**url参数转对象**、**html转Text**、**debounce节流**等常用函数，为避免不同项目多次复制粘贴的麻烦，这里统一封装，并发布到npm，以提高开发效率。如果你也有常用的代码，欢迎为本项目提交pr。
+业务开发过程中，会经常用到**日期格式化**、**url参数转对象**、**判断浏览器类型**、**判断表单类型**等常用函数，为避免不同项目多次复制粘贴的麻烦，这里统一封装，并发布到npm，以提高开发效率。如果你也有常用的代码，欢迎为本项目提交pr。
 
 ## 安装使用
 1. 使用npm安装
@@ -31,8 +31,60 @@ var OS = outils.getOS()
 ```
 
 ``` javascript
-// 只引入部分方法
+// 只引入部分方法('outils/<方法名>')
 const getOS = require('outils/getOS')
 var OS = getOS()
 ```
 ## Api
+├─array  
+│      arrayEqual  
+│      
+├─class  
+│      addClass  
+│      hasClass  
+│      removeClass  
+│      
+├─cookie  
+│      getCookie  
+│      removeCookie  
+│      setCookie  
+│      
+├─device  
+│      getExplore  
+│      getOS  
+│      
+├─dom  
+│      getScrollTop  
+│      offset  
+│      scrollTo  
+│      setScrollTop  
+│      
+├─keycode  
+│      getKeyName  
+│      
+├─object  
+│      deepClone  
+│      
+├─random  
+│      randomColor  
+│      randomNum  
+│      
+├─regexp  
+│      isEmail  
+│      isIdCard  
+│      isPhoneNum  
+│      isUrl  
+│      
+├─string  
+│      digitUppercase  
+|
+├─support
+│      isSupportWebP
+│      
+├─time  
+│      formatPassTime  
+│      formatRemainTime  
+│      
+└─url
+        parseQueryString  
+        stringfyQueryString   
