@@ -1,5 +1,6 @@
 /**
  * 
+ * @desc  设置Cookie
  * @param {String} name 
  * @param {String} value 
  * @param {Number} days 

@@ -1,6 +1,6 @@
 /**
  * 
- * @desc   格式化距现在的剩余时间
+ * @desc   格式化现在距${endTime}的剩余时间
  * @param  {Date} endTime  
  * @return {String}
  */
