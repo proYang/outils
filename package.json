@@ -1,6 +1,6 @@
 {
   "name": "outils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "前端业务代码工具库",
   "main": "min/outils.min.js",
   "scripts": {
