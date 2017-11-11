@@ -1,5 +1,9 @@
 # outils
-前端业务代码工具库
+
+[![Build Status](https://travis-ci.org/proYang/outils.svg?branch=master) ![npm](https://img.shields.io/npm/l/express.svg)](https://www.npmjs.com/package/outils) 
+
+ 
+前端业务代码工具库  
 
 > 目的：高效率完成前端业务代码
 
