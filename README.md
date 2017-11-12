@@ -68,11 +68,16 @@ const OS = getOS()
 #### &emsp;&emsp;[scrollTo][scrollTo]&emsp;&emsp;在${duration}时间内，滚动条平滑滚动到${to}指定位置
 #### &emsp;&emsp;[setScrollTop][setScrollTop]&emsp;&emsp;设置滚动条距顶部的距离
 
+### Function  
+#### &emsp;&emsp;[debounce][debounce]&emsp;&emsp;函数防抖   
+#### &emsp;&emsp;[throttle][throttle]&emsp;&emsp;函数节流   
+
 ### Keycode  
 #### &emsp;&emsp;[getKeyName][getKeyName]&emsp;&emsp;根据keycode获得键名 
 
 ### Object  
 #### &emsp;&emsp;[deepClone][deepClone]&emsp;&emsp;深拷贝，支持常见类型
+#### &emsp;&emsp;[isEmptyObject][isEmptyObject]&emsp;&emsp;判断Object是否为空
 
 ### Random  
 #### &emsp;&emsp;[randomColor][randomColor] &emsp;&emsp;随机生成颜色
@@ -117,9 +122,13 @@ const OS = getOS()
 [scrollTo]:https://github.com/proYang/outils/blob/master/src/dom/scrollTo.js
 [setScrollTop]:https://github.com/proYang/outils/blob/master/src/dom/setScrollTop.js
 
+[debounce]:https://github.com/proYang/outils/blob/master/src/function/debounce.js
+[throttle]:https://github.com/proYang/outils/blob/master/src/function/throttle.js
+
 [getKeyName]:https://github.com/proYang/outils/blob/master/src/keycode/getKeyName.js
 
 [deepClone]:https://github.com/proYang/outils/blob/master/src/object/deepClone.js
+[isEmptyObject]:https://github.com/proYang/outils/blob/master/src/object/isEmptyObject.js
 
 [randomColor]:https://github.com/proYang/outils/blob/master/src/random/randomColor.js
 [randomNum]:https://github.com/proYang/outils/blob/master/src/random/randomNum.js

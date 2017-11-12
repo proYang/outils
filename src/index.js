@@ -19,9 +19,13 @@ const offset = require('./dom/offset')
 const scrollTo = require('./dom/scrollTo')
 const setScrollTop = require('./dom/setScrollTop')
 
+const debounce = require('./function/debounce')
+const throttle = require('./function/throttle')
+
 const getKeyName = require('./keycode/getKeyName')
 
 const deepClone = require('./object/deepClone')
+const isEmptyObject = require('./object/isEmptyObject')
 
 const randomColor = require('./random/randomColor')
 const randomNum = require('./random/randomNum')
@@ -61,9 +65,13 @@ module.exports = {
     scrollTo,
     setScrollTop,
 
+    debounce,
+    throttle,
+
     getKeyName,
 
     deepClone,
+    isEmptyObject,
 
     randomColor,
     randomNum,
