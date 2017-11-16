@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>表单验证</title>
+    <script type="text/javascript" src="min/outils_validForm.min.js?001"></script>
+    <style>
+        body {
+            padding: 50px 100px;
+            font-family: Microsoft Yahei, Arial;
+            font-size: 14px;
+            color: #2c3e50;
+        }
+
+        form {
+            width: 310px;
+        }
+
+        .form_group {
+            margin-bottom: 10px;
+            height: 50px;
+        }
+
+        .form_group label {
+            display: inline-block;
+            text-align: right;
+            width: 60px;
+            margin-right: 5px;
+        }
+
+        .form_group input {
+            display: inline-block;
+            width: 225px;
+            border: 1px solid #95a5a6;
+            padding: 5px;
+            color: #34495e;
+            outline: none;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+
+        .form_group p.message {
+            color: #a1a1a1;
+            font-size: 10px;
+            margin: 8px 0 8px 70px;
+        }
+
+        .form_group.error input {
+            border: 1px solid #e74c3c;
+        }
+
+        .form_group.error .message {
+            color: #e74c3c;
+        }
+
+        .form_group.success input {
+            border: 1px solid #16a085;
+        }
+
+        .form_group.success .message {
+            color: #16a085;
+        }
+
+        .btn_group {
+            text-align: right;
+        }
+
+        .btn_group button {
+            display: inline-block;
+            box-sizing: border-box;
+            height: 28px;
+            margin: 0;
+            margin-right: 5px;
+            padding: 5px 10px 5px 10px;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            vertical-align: top;
+            text-align: center;
+            user-select: none;
+            cursor: pointer;
+            font: normal 13px/18px 'Microsoft Yahei';
+            box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34, 36, 38, .15) inset;
+            background: #3498db;
+            color: #fff;
+        }
+
+
+    </style>
+</head>
+<body>
+<form id="registerForm">
+
+    <div class="form_group">
+        <label for="name">名称</label>
+        <input type="text" name="uName" id="name" class="field-text" placeholder="请输入用户名">
+    </div>
+    <div class="form_group">
+        <label for="name">年龄</label>
+        <input type="text" name="uAge" placeholder="请输入用户年龄">
+    </div>
+
+    <div class="form_group ">
+        <label for="name">邮箱</label>
+        <input type="email" name="uEmail" id="email" placeholder="请输入用户邮箱地址">
+    </div>
+
+    <div class="form_group ">
+        <label for="name">密码</label>
+        <input type="password" name="uPwd" id="password" placeholder="请输入密码">
+    </div>
+
+    <div class="form_group ">
+        <label for="name">密码确认</label>
+        <input type="password" name="rePwd" id="password_re" placeholder="重复输入密码">
+    </div>
+
+    <div class="form_group ">
+        <label for="name">手机</label>
+        <input type="tel" name="phoneNumber" id="tel" maxlength="11" placeholder="请输入手机号">
+    </div>
+
+    <div class="form_group btn_group">
+        <button id="submit" type="button">验证</button>
+        <button id="reset" type="button">重置</button>
+    </div>
+</form>
+
+<script>
+    window.onload = function () {
+        var oFormBox = document.querySelector('#registerForm');
+        var validForm = outils_validForm.validForm();
+        document.getElementById('submit').onclick = function () {
+            validForm(oFormBox, {
+                'uName': [['required'], ['length:~10', '字符长度过长，请小于10个字符']],
+                'uAge': [['required'], ['range:18~55', '请输入25至40周岁']],
+                'uEmail': [['required'], ['email']],
+                'uPwd': [['required'], ['password']],
+                'rePwd': [['required'], ['match:uPwd', '与密码输入不一致']],
+                'phoneNumber': [['required'], ['phone']]
+            }).then(function (res) {
+                console.log(res);
+                for (var a = 0; a < res.length; a++) {
+                    console.log(res[a].el.value)
+                }
+            }).catch(function (err) {
+                if (err instanceof Error) throw err;
+                console.log(err.msg);
+            });
+        };
+    };
+</script>
+
+</body>
+</html>
