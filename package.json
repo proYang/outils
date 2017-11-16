@@ -1,5 +1,5 @@
 {
-  "name": "outils",
+  "name": "outils_validForm",
   "version": "1.0.3",
   "description": "前端业务代码工具库",
   "main": "min/outils.min.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/proYang/outils.git"
+    "url": "git+https://github.com/CGerAJ/outils.git"
   },
   "keywords": [
     "util",
     "tool",
     "common-util"
   ],
-  "author": "SlaneYang",
+  "author": "CGerAJ",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",

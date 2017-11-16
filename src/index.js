@@ -45,48 +45,54 @@ const formatRemainTime = require('./time/formatRemainTime')
 const parseQueryString = require('./url/parseQueryString')
 const stringfyQueryString = require('./url/stringfyQueryString')
 
+const validForm = require('./validator/validForm')
+
+
 
 module.exports = {
-    arrayEqual,
+    // arrayEqual,
+    //
+    // addClass,
+    // hasClass,
+    // removeClass,
+    //
+    // getCookie,
+    // removeCookie,
+    // setCookie,
+    //
+    // getOS,
+    // getExplore,
+    //
+    // getScrollTop,
+    // offset,
+    // scrollTo,
+    // setScrollTop,
+    //
+    // debounce,
+    // throttle,
+    //
+    // getKeyName,
+    //
+    // deepClone,
+    // isEmptyObject,
+    //
+    // randomColor,
+    // randomNum,
+    //
+    // isEmail,
+    // isIdCard,
+    // isPhoneNum,
+    // isUrl,
+    //
+    // digitUppercase,
+    //
+    // isSupportWebP,
+    //
+    // formatPassTime,
+    // formatRemainTime,
+    // parseQueryString,
+    // stringfyQueryString,
 
-    addClass,
-    hasClass,
-    removeClass,
+    validForm,
 
-    getCookie,
-    removeCookie,
-    setCookie,
-
-    getOS,
-    getExplore,
-
-    getScrollTop,
-    offset,
-    scrollTo,
-    setScrollTop,
-
-    debounce,
-    throttle,
-
-    getKeyName,
-
-    deepClone,
-    isEmptyObject,
-
-    randomColor,
-    randomNum,
-
-    isEmail,
-    isIdCard,
-    isPhoneNum,
-    isUrl,
-
-    digitUppercase,
-
-    isSupportWebP,
-
-    formatPassTime,
-    formatRemainTime,
-    parseQueryString,
-    stringfyQueryString,
 }

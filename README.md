@@ -104,6 +104,12 @@ const OS = getOS()
 #### &emsp;&emsp;[parseQueryString][parseQueryString]&emsp;&emsp;url参数转对象
 #### &emsp;&emsp;[stringfyQueryString][stringfyQueryString]&emsp;&emsp;对象序列化
 
+### 表单数据验证(未写测试文件)
+ #### 原始路径
+https://github.com/git-lt/lite-validator
+ #### demo页面
+https://github.com/CGerAJ/outils/index.html
+
 [arrayEqual]:https://github.com/proYang/outils/blob/master/src/array/arrayEqual.js
 
 [addClass]:https://github.com/proYang/outils/blob/master/src/class/addClass.js
@@ -147,3 +153,4 @@ const OS = getOS()
 
 [parseQueryString]:https://github.com/proYang/outils/blob/master/src/url/parseQueryString.js
 [stringfyQueryString]:https://github.com/proYang/outils/blob/master/src/url/stringfyQueryString.js
+[validForm]:https://github.com/CGerAJ/outils/blob/master/src/url/validForm.js
