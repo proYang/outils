@@ -44,7 +44,6 @@ describe('Function API:', function () {
             let interval = null
             let throttled = throttle(200, function () {
                 num++
-                console.log(num)
                 return true
             })
             interval = setInterval(function () {
@@ -62,7 +61,6 @@ describe('Function API:', function () {
             let interval = null
             let throttled = throttle(200, true, function () {
                 num++
-                console.log(num)
                 return true
             })
             interval = setInterval(function () {

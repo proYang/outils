@@ -1,7 +1,10 @@
 describe('Dom API:', function () {
     describe('#getScrollTop()', function () {
-        let length = 20
+        let $body = document.body,
+            bodyHeight = getComputedStyle($body).getPropertyValue('height'),
+            length = 20;
         before(function () {
+            $body.style.height = '10000px'
             outils.setScrollTop(length)
         })
         it(`outils.getScrollTop() should return true`, function () {
@@ -9,17 +12,25 @@ describe('Dom API:', function () {
         })
         after(function () {
             outils.setScrollTop(0)
+            $body.style.height = bodyHeight
         })
     });
 
     describe('#setScrollTop()', function () {
-        let length = 20
+        let $body = document.body,
+            bodyHeight = getComputedStyle($body).getPropertyValue('height'),
+            length = 20;
+        before(function () {
+            $body.style.height = '10000px'
+            outils.setScrollTop(length)
+        })
         it(`outils.getScrollTop() should return true`, function () {
             outils.setScrollTop(length)
             assert(outils.getScrollTop() === length)
         })
         after(function () {
             outils.setScrollTop(0)
+            $body.style.height = bodyHeight
         })
     });
 
@@ -44,17 +55,24 @@ describe('Dom API:', function () {
     });
 
     describe('#scrollTo()', function () {
-        let y = 100
-        let duration = 300
+        let $body = document.body,
+            bodyHeight = getComputedStyle($body).getPropertyValue('height'),
+            length = 20,
+            y = 100,
+            duration = 300;
+        before(function () {
+            $body.style.height = '10000px'
+        })
         it(`outils.scrollTo() should return true`, function (done) {
             outils.scrollTo(y, duration)
             setTimeout(function () {
                 assert(outils.getScrollTop() === y)
                 done()
-            }, duration + 100)
+            }, duration + 200)
         })
         after(function () {
             outils.setScrollTop(0)
+            $body.style.height = bodyHeight
         })
     });
 
