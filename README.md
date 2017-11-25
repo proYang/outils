@@ -67,6 +67,7 @@ const OS = getOS()
 #### &emsp;&emsp;[offset][offset]&emsp;&emsp;获取一个元素的距离文档(document)的位置，类似jQ中的offset()
 #### &emsp;&emsp;[scrollTo][scrollTo]&emsp;&emsp;在${duration}时间内，滚动条平滑滚动到${to}指定位置
 #### &emsp;&emsp;[setScrollTop][setScrollTop]&emsp;&emsp;设置滚动条距顶部的距离
+#### &emsp;&emsp;[windowResize][windowResize]&emsp;&emsp;H5软键盘缩回、弹起回调
 
 ### Function  
 #### &emsp;&emsp;[debounce][debounce]&emsp;&emsp;函数防抖   
@@ -120,7 +121,7 @@ const OS = getOS()
 [getScrollTop]:https://github.com/proYang/outils/blob/master/src/dom/getScrollTop.js
 [offset]:https://github.com/proYang/outils/blob/master/src/dom/offset.js
 [scrollTo]:https://github.com/proYang/outils/blob/master/src/dom/scrollTo.js
-[setScrollTop]:https://github.com/proYang/outils/blob/master/src/dom/setScrollTop.js
+[windowResize]:https://github.com/proYang/outils/blob/master/src/dom/windowResize.js
 
 [debounce]:https://github.com/proYang/outils/blob/master/src/function/debounce.js
 [throttle]:https://github.com/proYang/outils/blob/master/src/function/throttle.js

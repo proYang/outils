@@ -76,4 +76,37 @@ describe('Dom API:', function () {
         })
     });
 
+
+    describe('#windowResize()', function () {
+        let innerHeight = window.innerHeight
+        it(`outils.windowResize(downCb) should return true`, function (done) {
+            outils.windowResize(function () {
+                // 键盘缩回回调
+                assert(window.innerHeight == innerHeight)
+                done()
+            }, function () {})
+            // 触发resize事件，模拟软键盘缩回
+            window.dispatchEvent(new Event('resize'));
+        })
+    });
+
+    describe('#windowResize()', function () {
+        let innerHeight = window.innerHeight
+        it(`outils.windowResize(upCb) should return true`, function (done) {
+            outils.windowResize(function () {}, function () {
+                // 键盘弹起回调
+                assert(window.innerHeight === innerHeight - 200)
+                done()
+            })
+            // 设置innerHeight，模拟软键盘弹起
+            window.innerHeight = innerHeight - 200
+            // 触发resize事件
+            window.dispatchEvent(new Event('resize'));
+        })
+        after(function(){
+            window.innerHeight = innerHeight
+        })
+    });
+
+
 });
