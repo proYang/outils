@@ -121,6 +121,7 @@ const OS = getOS()
 [getScrollTop]:https://github.com/proYang/outils/blob/master/src/dom/getScrollTop.js
 [offset]:https://github.com/proYang/outils/blob/master/src/dom/offset.js
 [scrollTo]:https://github.com/proYang/outils/blob/master/src/dom/scrollTo.js
+[setScrollTop]:https://github.com/proYang/outils/blob/master/src/dom/setScrollTop.js
 [windowResize]:https://github.com/proYang/outils/blob/master/src/dom/windowResize.js
 
 [debounce]:https://github.com/proYang/outils/blob/master/src/function/debounce.js
