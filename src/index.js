@@ -18,6 +18,7 @@ const getScrollTop = require('./dom/getScrollTop')
 const offset = require('./dom/offset')
 const scrollTo = require('./dom/scrollTo')
 const setScrollTop = require('./dom/setScrollTop')
+const windowResize = require('./dom/windowResize')
 
 const debounce = require('./function/debounce')
 const throttle = require('./function/throttle')
@@ -64,6 +65,7 @@ module.exports = {
     offset,
     scrollTo,
     setScrollTop,
+    windowResize,
 
     debounce,
     throttle,
