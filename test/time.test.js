@@ -42,4 +42,10 @@ describe('Time API:', function () {
             assert(outils.formatRemainTime(time) === "1天 1小时 1分钟 1秒")
         });
     });
+
+    describe('#isTheSomeDay()', function () {
+        it(`outils.isTheSomeDay(new Date()) should return true`, function () {
+            assert(outils.isTheSomeDay(new Date()) === true)
+        });
+    });
 })
