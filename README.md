@@ -1,6 +1,8 @@
 # outils
 
-[![Build Status](https://travis-ci.org/proYang/outils.svg?branch=master) ![LICENSE MIT](https://img.shields.io/npm/l/express.svg)](https://www.npmjs.com/package/outils) 
+![Build Status](https://travis-ci.org/proYang/outils.svg?branch=master) 
+[![Coverage](https://coveralls.io/repos/github/proYang/outils/badge.svg?branch=master) 
+![LICENSE MIT](https://img.shields.io/npm/l/express.svg)](https://www.npmjs.com/package/outils) 
 
  
 前端业务代码工具库  
