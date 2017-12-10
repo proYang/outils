@@ -11,4 +11,43 @@ describe('Array API:', function () {
             assert(outils.arrayEqual(arr, arr))
         });
     });
+    describe('#arrayDistinct()',()=>{
+        const testDistinctArray = {
+            object:{
+                init: [
+                    {id:1,name:"react"},
+                    {id:1,name:"react"},
+                    ['node'],
+                    ['node']
+                ],
+                result:[
+                    {id:1,name:"react"},
+                    ['node'],
+                ]
+            },
+            stringOrNumber:{
+                init:["1","1",2,2],
+                result:["1",2]
+            }
+        }
+        
+        it(`outils.arrayDistinct(${JSON.stringify(testDistinctArray.object.init,undefined,2)} should return 
+            ${JSON.stringify(outils.arrayDistinct(testDistinctArray.object.result),undefined,2)})`,()=>{
+                assert(
+                    outils.arrayEqual(
+                        testDistinctArray.object.result,
+                        outils.arrayDistinct(testDistinctArray.object.init)
+                    )
+            )
+        })
+        it(`outils.arrayDistinct(${JSON.stringify(testDistinctArray.stringOrNumber.init,undefined,2)} should return 
+        ${JSON.stringify(outils.arrayDistinct(testDistinctArray.stringOrNumber.result),undefined,2)})`,()=>{
+            assert(
+                outils.arrayEqual(
+                    testDistinctArray.stringOrNumber.result,
+                    outils.arrayDistinct(testDistinctArray.stringOrNumber.init)
+                )
+        )
+    })
+    })
 });
