@@ -2,6 +2,7 @@
  * @desc webpack打包入口文件
  */
 const arrayEqual = require('./array/arrayEqual')
+const arrayDistinct = require('./array/arrayDistinct')
 
 const addClass = require('./class/addClass')
 const hasClass = require('./class/hasClass')
@@ -49,6 +50,7 @@ const stringfyQueryString = require('./url/stringfyQueryString')
 
 module.exports = {
     arrayEqual,
+    arrayDistinct,
 
     addClass,
     hasClass,
