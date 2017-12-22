@@ -43,9 +43,12 @@ describe('Time API:', function () {
         });
     });
 
-    describe('#isTheSomeDay()', function () {
-        it(`outils.isTheSomeDay(new Date()) should return true`, function () {
-            assert(outils.isTheSomeDay(new Date()) === true)
+    describe('#isSameDay()', function () {
+        it(`outils.isSameDay(new Date()) should return true`, function () {
+            assert(outils.isSameDay(new Date()) === true)
+        });
+        it(`outils.isSameDay(new Date(), new Date(new Date().getTime() - 86400000)) should return false`, function () {
+            assert(outils.isSameDay(new Date(), new Date(new Date().getTime() - 86400000)) === false)
         });
     });
 })

@@ -4,7 +4,7 @@
  * @param  {Date} date2 可选／默认值：当天
  * @return {Boolean}
  */
-function isTheSomeDay(date1, date2) {
+function isSameDay(date1, date2) {
     if (!date2) {
         date2 = new Date();
     }
@@ -19,4 +19,4 @@ function isTheSomeDay(date1, date2) {
 
 }
 
-module.exports = isTheSomeDay
+module.exports = isSameDay
