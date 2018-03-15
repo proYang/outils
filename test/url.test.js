@@ -10,6 +10,20 @@ describe('Url API:', function () {
                 rsv_spt: '10'
             })
         });
+        it(`outils.parseQueryString('www.baidu.com?a=123&b=%26') deepEqual '{
+            a: '123',
+            b: '&'
+        }' should return true`, function () {
+            let url = 'www.baidu.com?a=123&b=%26'
+            assert.deepEqual(outils.parseQueryString(url), {
+                a: '123',
+                b: '&'
+            })
+        });
+        it(`outils.parseQueryString('') deepEqual '{}' should return true`, function () {
+            let url = ''
+            assert.deepEqual(outils.parseQueryString(url), {})
+        });
     });
 
     describe('#stringfyQueryString()', function () {

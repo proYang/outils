@@ -42,6 +42,7 @@ const isSupportWebP = require('./support/isSupportWebP')
 
 const formatPassTime = require('./time/formatPassTime')
 const formatRemainTime = require('./time/formatRemainTime')
+const isSameDay = require('./time/isSameDay')
 
 const parseQueryString = require('./url/parseQueryString')
 const stringfyQueryString = require('./url/stringfyQueryString')
@@ -89,6 +90,8 @@ module.exports = {
 
     formatPassTime,
     formatRemainTime,
+    isSameDay,
+
     parseQueryString,
     stringfyQueryString,
 }

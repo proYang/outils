@@ -42,4 +42,13 @@ describe('Time API:', function () {
             assert(outils.formatRemainTime(time) === "1天 1小时 1分钟 1秒")
         });
     });
+
+    describe('#isSameDay()', function () {
+        it(`outils.isSameDay(new Date()) should return true`, function () {
+            assert(outils.isSameDay(new Date()) === true)
+        });
+        it(`outils.isSameDay(new Date(), new Date(new Date().getTime() - 86400000)) should return false`, function () {
+            assert(outils.isSameDay(new Date(), new Date(new Date().getTime() - 86400000)) === false)
+        });
+    });
 })
