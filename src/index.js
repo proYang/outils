@@ -42,6 +42,7 @@ const isSupportWebP = require('./support/isSupportWebP')
 
 const formatPassTime = require('./time/formatPassTime')
 const formatRemainTime = require('./time/formatRemainTime')
+const isLeapYear = require('./time/isLeapYear')
 const isSameDay = require('./time/isSameDay')
 
 const parseQueryString = require('./url/parseQueryString')
@@ -91,6 +92,7 @@ module.exports = {
     formatPassTime,
     formatRemainTime,
     isSameDay,
+    isLeapYear,
 
     parseQueryString,
     stringfyQueryString,

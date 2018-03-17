@@ -46,6 +46,14 @@ describe('Class API:', function () {
             outils.removeClass($ele, 'test')
             assert.notEqual(outils.hasClass($ele, 'test'))
         });
+        it(`outils.removeClass($ele, 'test') should return false`, function () {
+            outils.removeClass($ele, 'test')
+            assert.notEqual(outils.hasClass($ele, 'test'))
+            outils.addClass($ele, 'newTest')
+            assert(outils.hasClass($ele, 'newTest'))
+            outils.removeClass($ele, 'newTest')
+            assert.notEqual(outils.hasClass($ele, 'newTest'))
+        });
         after(function () {
             document.body.removeChild($ele)
         })
