@@ -16,7 +16,7 @@ branches:
     - production
 before_deploy:
   - npm run build
-  - rm -rf ./src ./test ./coverage ./script
+  - rm -rf ./src ./test ./coverage ./script ./.babelrc
 deploy:
   provider: npm
   email: "$NPM_EMAIL"
