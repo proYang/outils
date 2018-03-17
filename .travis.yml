@@ -14,3 +14,20 @@ after_success:
 branches:
   only:
     - master
+    - production
+jobs:
+  include:
+    - stage: npm release
+      if: tag IS present
+      node_js: "7"
+      script: npm run build
+      before_deploy:
+        - rm -rf ./src ./test ./coverage ./script
+      deploy:
+        provider: npm
+        email: "$NPM_EMAIL"
+        api_key: "$NPM_TOKEN"
+        skip_cleanup: true
+        on:
+          tags: true
+          branch: production
