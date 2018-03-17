@@ -7,7 +7,6 @@ install:
   - npm install
 script:
   - npm run test
-  - npm run build
 after_success:
 - cat ./coverage/lcov.info | node_modules/.bin/coveralls --verbose
 - rm -rf ./coverage
@@ -16,6 +15,7 @@ branches:
     - master
     - production
 before_deploy:
+  - npm run build
   - rm -rf ./src ./test ./coverage ./script
 deploy:
   provider: npm
