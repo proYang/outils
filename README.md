@@ -102,6 +102,7 @@ const OS = getOS()
 ### Time  
 #### &emsp;&emsp;[formatPassTime][formatPassTime]&emsp;&emsp;格式化${startTime}距现在的已过时间
 #### &emsp;&emsp;[formatRemainTime][formatRemainTime]&emsp;&emsp;格式化现在距${endTime}的剩余时间
+#### &emsp;&emsp;[isLeapYear][isLeapYear]&emsp;&emsp;判断是否为闰年
 #### &emsp;&emsp;[isSameDay][isSameDay]&emsp;&emsp;判断是否为同一天
 
 ### Url
@@ -149,6 +150,7 @@ const OS = getOS()
 
 [formatPassTime]:https://github.com/proYang/outils/blob/master/src/time/formatPassTime.js
 [formatRemainTime]:https://github.com/proYang/outils/blob/master/src/time/formatRemainTime.js
+[isLeapYear]:https://github.com/proYang/outils/blob/master/src/time/isLeapYear.js
 [isSameDay]:https://github.com/proYang/outils/blob/master/src/time/isSameDay.js
 
 [parseQueryString]:https://github.com/proYang/outils/blob/master/src/url/parseQueryString.js

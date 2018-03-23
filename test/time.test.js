@@ -43,6 +43,33 @@ describe('Time API:', function () {
         });
     });
 
+    describe('#isLeapYear()', function () {
+        it(`outils.isLeapYear(2008) should return true`, function () {
+            assert(outils.isLeapYear(2008))
+        });
+        it(`outils.isLeapYear(2012) should return true`, function () {
+            assert(outils.isLeapYear(2012))
+        });
+        it(`outils.isLeapYear(2016) should return true`, function () {
+            assert(outils.isLeapYear(2016))
+        });
+        it(`outils.isLeapYear(2020) should return true`, function () {
+            assert(outils.isLeapYear(2020))
+        });
+        it(`outils.isLeapYear(2024) should return true`, function () {
+            assert(outils.isLeapYear(2024))
+        });
+        it(`outils.isLeapYear(2017) should return false`, function () {
+            assert.notEqual(outils.isLeapYear(2017))
+        });
+        it(`outils.isLeapYear(2018) should return false`, function () {
+            assert.notEqual(outils.isLeapYear(2018))
+        });
+        it(`outils.isLeapYear(2019) should return false`, function () {
+            assert.notEqual(outils.isLeapYear(2019))
+        });
+    });
+
     describe('#isSameDay()', function () {
         it(`outils.isSameDay(new Date()) should return true`, function () {
             assert(outils.isSameDay(new Date()) === true)

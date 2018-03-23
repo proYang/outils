@@ -1,6 +1,5 @@
 language: node_js
 node_js:
-  - "7"
   - "8"
 before_install:
 - sudo apt-get install google-chrome-stable
@@ -14,3 +13,14 @@ after_success:
 branches:
   only:
     - master
+    - production
+before_deploy:
+  - npm run build
+  - rm -rf ./src ./test ./coverage ./script ./.babelrc
+deploy:
+  provider: npm
+  email: "$NPM_EMAIL"
+  api_key: "$NPM_TOKEN"
+  skip_cleanup: true
+  on:
+    branch: production
