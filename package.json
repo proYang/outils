@@ -7,7 +7,7 @@
     "build": "node script/build.js",
     "build-copy": "node script/build-copy.js",
     "build-pack": "node script/build-pack",
-    "test": "npm run build-pack & karma start script/karma.conf.js"
+    "test": "npm run build-pack && karma start script/karma.conf.js"
   },
   "repository": {
     "type": "git",
