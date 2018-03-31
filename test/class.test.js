@@ -28,6 +28,9 @@ describe('Class API:', function () {
         it(`outils.hasClass($ele, 'test') should return true`, function () {
             assert(outils.hasClass($ele, 'test'))
         });
+        it(`outils.hasClass($ele, 'test') should return false`, function () {
+            assert(!outils.hasClass($ele, 'test2'))
+        });
         after(function () {
             document.body.removeChild($ele)
         })
