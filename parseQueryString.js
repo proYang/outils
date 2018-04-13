@@ -5,12 +5,28 @@
  * @return {Object} 
  */
 function parseQueryString(url) {
-    url = url == null ? window.location.href : url
-    var search = url.substring(url.lastIndexOf('?') + 1)
-    if (!search) {
-        return {}
+    url = (!url ? window.location.href : url);
+    if(url.indexOf('?') === -1) {
+        return {};
     }
-    return JSON.parse('{"' + decodeURIComponent(search).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"') + '"}')
+    var search = url.substring(url.lastIndexOf('?') + 1);
+    if (!search) {
+        return {};
+    }
+    var data = {};
+    try{
+        data = JSON.parse(
+            '{"' +
+                decodeURIComponent(search)
+                    .replace(/"/g, '\\"')
+                    .replace(/&/g, '","')
+                    .replace(/=/g, '":"') +
+                '"}'
+        );
+    } catch (e) {
+        console.error('数据格式错误');
+    }
+    return data;
 }
 
 module.exports = parseQueryString
