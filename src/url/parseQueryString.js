@@ -5,9 +5,14 @@
  * @return {Object} 
  */
 function parseQueryString(url) {
-    url = url == null ? window.location.href : url
-    var search = url[0] === '?' ? url.substr(1) : url.substring(url.lastIndexOf('?') + 1)
-    if (search === '') return {}
+    url = !url ? window.location.href : url;
+    if(url.indexOf('?') === -1) {
+        return {};
+    }
+    var search = url[0] === '?' ? url.substr(1) : url.substring(url.lastIndexOf('?') + 1);
+    if (search === '') {
+        return {};
+    }
     search = search.split('&');
     var query = {};
     for (var i = 0; i < search.length; i++) {
