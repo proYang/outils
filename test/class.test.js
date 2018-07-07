@@ -47,15 +47,15 @@ describe('Class API:', function () {
         })
         it(`outils.removeClass($ele, 'test') should return false`, function () {
             outils.removeClass($ele, 'test')
-            assert.notEqual(outils.hasClass($ele, 'test'))
+            assert.notEqual(outils.hasClass($ele, 'test'), true)
         });
         it(`outils.removeClass($ele, 'test') should return false`, function () {
             outils.removeClass($ele, 'test')
-            assert.notEqual(outils.hasClass($ele, 'test'))
+            assert.notEqual(outils.hasClass($ele, 'test'), true)
             outils.addClass($ele, 'newTest')
             assert(outils.hasClass($ele, 'newTest'))
             outils.removeClass($ele, 'newTest')
-            assert.notEqual(outils.hasClass($ele, 'newTest'))
+            assert.notEqual(outils.hasClass($ele, 'newTest'), true)
         });
         after(function () {
             document.body.removeChild($ele)

@@ -2,7 +2,7 @@ describe('Regexp API:', function () {
 
 	describe('#isEmail()', function () {
 		it('outils.isEmail("leiquanlive.com") should return false ', function () {
-			assert.notEqual(outils.isEmail("leiquanlive.com"))
+			assert.notEqual(outils.isEmail("leiquanlive.com"), true)
 		});
 		it('outils.isEmail("leiquan@live.com") should return true ', function () {
 			assert(outils.isEmail("leiquan@live.com"))

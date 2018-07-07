@@ -20,7 +20,7 @@ describe('Cookie API:', function () {
         })
         it(`outils.removeCookie('test') should return false`, function () {
             outils.removeCookie('test')
-            assert.notEqual(outils.getCookie('test') === 'removeTestValue')
+            assert.notEqual(outils.getCookie('test') === 'removeTestValue', true)
         })
     })
 

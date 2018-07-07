@@ -34,7 +34,7 @@ describe('Object API:', function () {
                     second: [1, 2, 3, 4, 3]
                 }
             }
-            assert.notEqual(person, outils.deepClone(person))
+            assert.notEqual(person, outils.deepClone(person), true)
         });
     });
 
@@ -46,11 +46,11 @@ describe('Object API:', function () {
         it(`outils.isEmptyObject({ one: 1 }) should return false`, function () {
             assert.notEqual(outils.isEmptyObject({
                 one: 1
-            }))
+            }), true)
         });
 
         it(`outils.isEmptyObject([]) should return false`, function () {
-            assert.notEqual(outils.isEmptyObject([]))
+            assert.notEqual(outils.isEmptyObject([]), true)
         });
     });
 })
