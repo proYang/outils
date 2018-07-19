@@ -6,6 +6,7 @@ const pkg = require('../package.json')
 const rootPath = path.resolve(__dirname, '../')
 
 const config = {
+    mode: 'production',
     entry: path.resolve(rootPath, 'src', 'index.js'),
     output: {
         filename: `${pkg.name}.min.js`,
@@ -18,10 +19,7 @@ const config = {
             test: /\.js$/,
             loader: "babel-loader"
         }]
-    },
-    plugins: [
-        new webpack.optimize.UglifyJsPlugin()
-    ]
+    }
 }
 
 module.exports = config
