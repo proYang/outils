@@ -22,7 +22,7 @@ function scrollTo(to, duration) {
     var diff = to - getScrollTop();
     if (diff === 0) return
     var step = diff / duration * 10;
-    requestAnimationFrame(
+    requestAnimFrame(
         function () {
             if (Math.abs(step) > Math.abs(diff)) {
                 setScrollTop(getScrollTop() + diff);
