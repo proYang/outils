@@ -22,9 +22,10 @@
   "author": "SlaneYang",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@types/webpack-env": "^1.13.6",
+    "babel-loader": "^8.0.2",
     "chalk": "^2.4.1",
     "copy": "^0.3.2",
     "coveralls": "^3.0.2",
@@ -38,7 +39,9 @@
     "ora": "^3.0.0",
     "power-assert": "^1.6.0",
     "rimraf": "^2.6.2",
-    "webpack": "^4.16.1"
+    "ts-loader": "^5.2.0",
+    "typescript": "^3.0.3",
+    "webpack": "^4.20.0"
   },
   "dependencies": {}
 }
