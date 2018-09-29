@@ -4,7 +4,7 @@
  * @return {Any}
  */
 function deepClone(values: any): any {
-    var copy;
+    let copy: any;
 
     // Handle the 3 simple types, and null or undefined
     if (null == values || "object" != typeof values) return values;

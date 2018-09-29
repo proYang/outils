@@ -3,17 +3,26 @@
  * @desc 获取浏览器类型和版本
  * @return {String} 
  */
+interface SysValue {
+    ie: string,
+    edge: string,
+    firefox: string,
+    chrome: string,
+    opera: string,
+    safari: string
+}
+
 function getExplore(): string {
-    var sys = {
-      ie: '',
-      edge: '',
-      firefox: '',
-      chrome: '',
-      opera: '',
-      safari: '',
-    },
-        ua = navigator.userAgent.toLowerCase(),
-        s;
+    let sys: SysValue = {
+        ie: '',
+        edge: '',
+        firefox: '',
+        chrome: '',
+        opera: '',
+        safari: '',
+    };
+    let ua: string = navigator.userAgent.toLowerCase();
+    let s: Array<string>;
     (s = ua.match(/rv:([\d.]+)\) like gecko/)) ? sys.ie = s[1]:
         (s = ua.match(/msie ([\d\.]+)/)) ? sys.ie = s[1] :
         (s = ua.match(/edge\/([\d\.]+)/)) ? sys.edge = s[1] :

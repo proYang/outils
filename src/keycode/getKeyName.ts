@@ -1,4 +1,4 @@
-var keyCodeMap = {
+const keyCodeMap = {
     8: 'Backspace',
     9: 'Tab',
     13: 'Enter',

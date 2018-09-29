@@ -4,9 +4,9 @@
  * @return {String} 
  */
 function getOS(): string {
-    var userAgent = 'navigator' in window && 'userAgent' in navigator && navigator.userAgent.toLowerCase() || '';
-    var vendor = 'navigator' in window && 'vendor' in navigator && navigator.vendor.toLowerCase() || '';
-    var appVersion = 'navigator' in window && 'appVersion' in navigator && navigator.appVersion.toLowerCase() || '';
+    let userAgent: string = 'navigator' in window && 'userAgent' in navigator && navigator.userAgent.toLowerCase() || '';
+    let vendor: string = 'navigator' in window && 'vendor' in navigator && navigator.vendor.toLowerCase() || '';
+    let appVersion: string = 'navigator' in window && 'appVersion' in navigator && navigator.appVersion.toLowerCase() || '';
 
     if (/iphone/i.test(userAgent) || /ipad/i.test(userAgent) || /ipod/i.test(userAgent)) return 'ios'
     if (/android/i.test(userAgent)) return 'android'

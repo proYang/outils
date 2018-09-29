@@ -19,9 +19,9 @@ function scrollTo(to: number, duration: number): void {
         setScrollTop(to);
         return
     }
-    var diff = to - getScrollTop();
+    let diff: number = to - getScrollTop();
     if (diff === 0) return
-    var step = diff / duration * 10;
+    let step: number = diff / duration * 10;
     requestAnimFrame(
         function () {
             if (Math.abs(step) > Math.abs(diff)) {

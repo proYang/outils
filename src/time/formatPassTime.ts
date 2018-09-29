@@ -4,13 +4,13 @@
  * @return {String}
  */
 function formatPassTime(startTime: Date|number): string {
-    var currentTime = Date.parse(new Date().toString()),
-        time = currentTime - Date.parse(startTime.toString()),
-        day = parseInt(String(time / (1000 * 60 * 60 * 24))),
-        hour = parseInt(String(time / (1000 * 60 * 60))),
-        min = parseInt(String(time / (1000 * 60))),
-        month = parseInt(String(day / 30)),
-        year = parseInt(String(month / 12));
+    const currentTime: number = Date.parse(new Date().toString());
+    const time: number = currentTime - Date.parse(startTime.toString());
+    const day: number = parseInt(String(time / (1000 * 60 * 60 * 24)));
+    const hour: number = parseInt(String(time / (1000 * 60 * 60)));
+    const min: number = parseInt(String(time / (1000 * 60)));
+    const month: number = parseInt(String(day / 30));
+    const year: number = parseInt(String(month / 12));
     if (year) return year + "年前"
     if (month) return month + "个月前"
     if (day) return day + "天前"

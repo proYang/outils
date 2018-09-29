@@ -7,11 +7,11 @@
  */
 
 function windowResize(downCb: () => void, upCb: () => void): void {
-	var clientHeight = window.innerHeight;
+	let clientHeight: number = window.innerHeight;
 	downCb = typeof downCb === 'function' ? downCb : function () {}
 	upCb = typeof upCb === 'function' ? upCb : function () {}
 	window.addEventListener('resize', () => {
-		var height = window.innerHeight;
+		let height: number = window.innerHeight;
 		if (height === clientHeight) {
 			downCb();
 		}

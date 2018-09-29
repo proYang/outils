@@ -1,6 +1,5 @@
 /**
  * @desc webpack打包入口文件  
- * @todo webpack目前require.context只兼容CommonJS规范，无法使用es6模块
  */
 interface RequireContext {
   keys(): string[];

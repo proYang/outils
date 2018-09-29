@@ -4,8 +4,14 @@
  * @param {HTMLElement} ele
  * @returns { {left: number, top: number} }
  */
+
+ interface PositionVal {
+   left: number,
+   top: number
+ }
+
 function offset(ele: HTMLElement): object {
-    let pos = {
+    let pos: PositionVal = {
         left: 0,
         top: 0
     };

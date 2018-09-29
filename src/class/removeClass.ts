@@ -9,7 +9,7 @@ import hasClass from './hasClass';
 
 function removeClass(ele: HTMLElement, cls: string): void {
     if (hasClass(ele, cls)) {
-        var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+        let reg: RegExp = new RegExp('(\\s|^)' + cls + '(\\s|$)');
         ele.className = ele.className.replace(reg, ' ');
     }
 }

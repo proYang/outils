@@ -19,10 +19,10 @@ function throttle(delay, noTrailing?: any, callback?: any, debounceMode?: boolea
     // After wrapper has stopped being called, this timeout ensures that
     // `callback` is executed at the proper times in `throttle` and `end`
     // debounce modes.
-    var timeoutID;
+    let timeoutID;
 
     // Keep track of the last time `callback` was executed.
-    var lastExec = 0;
+    let lastExec = 0;
 
     // `noTrailing` defaults to falsy.
     if (typeof noTrailing !== 'boolean') {
@@ -36,9 +36,9 @@ function throttle(delay, noTrailing?: any, callback?: any, debounceMode?: boolea
     // is executed.
     function wrapper() {
 
-        var self = this;
-        var elapsed = Number(new Date()) - lastExec;
-        var args = arguments;
+        const self = this;
+        const elapsed: number = Number(new Date()) - lastExec;
+        const args = arguments;
 
         // Execute `callback` and update the `lastExec` timestamp.
         function exec() {

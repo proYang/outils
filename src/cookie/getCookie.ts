@@ -5,9 +5,9 @@
  * @return {String}
  */
 function getCookie(name: string): string {
-    var arr = document.cookie.replace(/\s/g, "").split(';');
-    for (var i = 0; i < arr.length; i++) {
-        var tempArr = arr[i].split('=');
+    let arr: Array<string> = document.cookie.replace(/\s/g, "").split(';');
+    for (let i = 0; i < arr.length; i++) {
+        let tempArr: Array<string> = arr[i].split('=');
         if (tempArr[0] == name) {
             return decodeURIComponent(tempArr[1]);
         }
