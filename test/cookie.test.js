@@ -6,6 +6,9 @@ describe('Cookie API:', function () {
         it(`outils.getCookie('test', 'getTestValue') should return true`, function () {
             assert(outils.getCookie('test') === 'getTestValue')
         })
+        it(`outils.getCookie('empty', '') should return true`, function () {
+            assert(outils.getCookie('empty') === '')
+        })
         after(function () {
             outils.removeCookie('test')
         })
@@ -17,7 +20,7 @@ describe('Cookie API:', function () {
         })
         it(`outils.removeCookie('test') should return false`, function () {
             outils.removeCookie('test')
-            assert.notEqual(outils.getCookie('test') === 'removeTestValue')
+            assert.notEqual(outils.getCookie('test') === 'removeTestValue', true)
         })
     })
 

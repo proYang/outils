@@ -60,13 +60,13 @@ describe('Time API:', function () {
             assert(outils.isLeapYear(2024))
         });
         it(`outils.isLeapYear(2017) should return false`, function () {
-            assert.notEqual(outils.isLeapYear(2017))
+            assert.notEqual(outils.isLeapYear(2017), true)
         });
         it(`outils.isLeapYear(2018) should return false`, function () {
-            assert.notEqual(outils.isLeapYear(2018))
+            assert.notEqual(outils.isLeapYear(2018), true)
         });
         it(`outils.isLeapYear(2019) should return false`, function () {
-            assert.notEqual(outils.isLeapYear(2019))
+            assert.notEqual(outils.isLeapYear(2019), true)
         });
     });
 
