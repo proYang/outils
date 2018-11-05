@@ -78,4 +78,52 @@ describe('Time API:', function () {
             assert(outils.isSameDay(new Date(), new Date(new Date().getTime() - 86400000)) === false)
         });
     });
+
+    describe('#timeLeft()', function() {
+    	it(`outils.timeLeft('2018-10-24 10:24:00', '2018-10-24 10:24:00') should return true`, function() {
+            let startTime = new Date('2018-10-24 10:24:00')
+            let endTime = new Date('2018-10-24 10:24:00')
+            assert.deepEqual(outils.timeLeft(startTime, endTime), { d:0, h:0, m:0, s:0 })
+    	});
+    	it(`outils.timeLeft('2018-10-25 10:24:00', '2018-10-24 10:24:00') should return true`, function() {
+    		let startTime = new Date('2018-10-25 10:24:00')
+    		let endTime = new Date('2018-10-24 10:24:00')
+    		assert.deepEqual(outils.timeLeft(startTime, endTime), { d: 0, h: 0, m: 0, s: 0 })
+        });
+        it(`outils.timeLeft('2018-10-1 10:24:00', '2018-10-24 10:24:00') should return true`, function() {
+        	let startTime = new Date('2018-10-1 10:24:00')
+        	let endTime = new Date('2018-10-24 10:24:00')
+        	assert.deepEqual(outils.timeLeft(startTime, endTime), { d: 23, h: 0, m: 0, s: 0 })
+        });
+        it(`outils.timeLeft('2018-10-1 10:24:00', '2018-10-24 10:24:00') should return true`, function() {
+        	let startTime = new Date('2018-10-24 6:24:00')
+        	let endTime = new Date('2018-10-24 10:24:00')
+        	assert.deepEqual(outils.timeLeft(startTime, endTime), { d: 0, h: 4, m: 0, s: 0 })
+        });
+        it(`outils.timeLeft('2018-10-1 10:21:00', '2018-10-24 10:24:00') should return true`, function() {
+        	let startTime = new Date('2018-10-24 10:21:00')
+        	let endTime = new Date('2018-10-24 10:24:00')
+        	assert.deepEqual(outils.timeLeft(startTime, endTime), { d: 0, h: 0, m: 3, s: 0 })
+        });
+        it(`outils.timeLeft('2018-10-1 10:23:30', '2018-10-24 10:24:00') should return true`, function() {
+        	let startTime = new Date('2018-10-24 10:23:30')
+        	let endTime = new Date('2018-10-24 10:24:00')
+        	assert.deepEqual(outils.timeLeft(startTime, endTime), { d: 0, h: 0, m: 0, s: 30 })
+        });
+        it(`outils.timeLeft('2018-10-1 10:23:30', '2018-10-24 10:24:00') should return true`, function() {
+        	let startTime = '2018-10-24 10:23:30'
+        	let endTime = new Date('2018-10-24 10:24:00')
+        	assert.deepEqual(outils.timeLeft(startTime, endTime), { d: 0, h: 0, m: 0, s: 30 })
+        });
+        it(`outils.timeLeft('2018-10-1 10:23:30', '2018-10-24 10:24:00') should return true`, function() {
+        	let startTime = new Date('2018-10-24 10:23:30')
+        	let endTime = '2018-10-24 10:24:00'
+        	assert.deepEqual(outils.timeLeft(startTime, endTime), { d: 0, h: 0, m: 0, s: 30 })
+        });
+        it(`outils.timeLeft('2018-10-1 10:23:30', '2018-10-24 10:24:00') should return true`, function() {
+        	let startTime = '2018-10-24 10:23:30'
+        	let endTime = '2018-10-24 10:24:00'
+        	assert.deepEqual(outils.timeLeft(startTime, endTime), { d: 0, h: 0, m: 0, s: 30 })
+        });
+    });
 })
