@@ -70,6 +70,7 @@ declare namespace outils {
   export function formatRemainTime(endTime: Date): string
   export function isLeapYear(year: number): boolean
   export function isSameDay(date1: Date, date2: Date): boolean
+  export function timeLeft(startTime: Date | string, endTime: Date | string): { d: number, h: number, m: number, s: number }
   /**
    * url
    */
