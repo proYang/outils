@@ -153,6 +153,7 @@ const OS = getOS()
 [formatRemainTime]:https://github.com/proYang/outils/blob/master/src/time/formatRemainTime.js
 [isLeapYear]:https://github.com/proYang/outils/blob/master/src/time/isLeapYear.js
 [isSameDay]:https://github.com/proYang/outils/blob/master/src/time/isSameDay.js
+[timeLeft]:https://github.com/proYang/outils/blob/master/src/time/timeLeft.js
 
 [parseQueryString]:https://github.com/proYang/outils/blob/master/src/url/parseQueryString.js
 [stringfyQueryString]:https://github.com/proYang/outils/blob/master/src/url/stringfyQueryString.js
