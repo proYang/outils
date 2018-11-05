@@ -104,6 +104,7 @@ const OS = getOS()
 #### &emsp;&emsp;[formatRemainTime][formatRemainTime]&emsp;&emsp;格式化现在距${endTime}的剩余时间
 #### &emsp;&emsp;[isLeapYear][isLeapYear]&emsp;&emsp;判断是否为闰年
 #### &emsp;&emsp;[isSameDay][isSameDay]&emsp;&emsp;判断是否为同一天
+#### &emsp;&emsp;[timeLeft][timeLeft]&emsp;&emsp;计算${startTime - endTime}的剩余时间
 
 ### Url
 #### &emsp;&emsp;[parseQueryString][parseQueryString]&emsp;&emsp;url参数转对象

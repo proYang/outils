@@ -1,20 +1,24 @@
 /**
- * 开始时间-结束时间的剩余时间
- * @param startTime
- * @param endTime
- * @returns {Object} 天 时 分 秒
+ * @desc ${startTime - endTime}的剩余时间,startTime大于endTime时，均返回0
+ * @param { Date | String } startTime
+ * @param { Date | String } endTime
+ * @returns { Object } { d, h, m, s } 天 时 分 秒
  */
-export function timeLeft(startTime, endTime) {
+function timeLeft(startTime, endTime) {
     if (!startTime || !endTime) {
         return
     }
-    /**
-     * 苹果浏览器兼容性问题
-     * replace(/-/g, '/')
-     * @type {Date}
-     */
-    var startDate = new Date(startTime.replace(/-/g, '/')) //开始时间
-    var endDate = new Date(endTime.replace(/-/g, '/')) //结束时间
+    var startDate,endDate;
+    if (startTime instanceof Date) {
+        startDate = startTime;
+    } else {
+        startDate = new Date(startTime.replace(/-/g, '/')) //开始时间
+    }
+    if (endTime instanceof Date) {
+    	endDate = endTime;
+    } else {
+        endDate = new Date(endTime.replace(/-/g, '/')) //结束时间
+    }
     var t = endDate.getTime() - startDate.getTime()
     var d = 0,
         h = 0,
@@ -29,4 +33,4 @@ export function timeLeft(startTime, endTime) {
     return { d, h, m, s }
 }
 
-modules.exports = timeLeft;
+module.exports = timeLeft;
