@@ -1,3 +1,4 @@
+![outils](https://cdn.slane.cn//outils-logo-2018-11-09_23-12-54.png)
 # outils
 [![npm](https://img.shields.io/npm/v/outils.svg)](https://www.npmjs.com/package/outils) 
 ![Build Status](https://travis-ci.org/proYang/outils.svg?branch=master) 
@@ -11,7 +12,7 @@
 
 业务开发过程中，会经常用到`日期格式化`、`url参数转对象`、`浏览器类型判断`、`节流函数`等常用函数，为避免不同项目多次复制粘贴的麻烦，这里统一封装，并发布到npm，以提高开发效率。如果你也有常用的代码，欢迎为本项目提交pr。
 
-## 安装使用
+## :building_construction:  安装使用
 
 1. 直接下载`min`目录下的[outils.min.js](https://github.com/proYang/outils/blob/master/min/outils.min.js)使用，支持UMD通用模块规范  
 2. 使用npm安装
@@ -45,7 +46,7 @@ const OS = outils.getOS()
 const getOS = require('outils/getOS')
 const OS = getOS()
 ```
-## API文档
+## :package:  API文档
 
 ### Array  
 #### &emsp;&emsp;[arrayEqual][arrayEqual]&emsp;&emsp;判断两个数组是否相等 
