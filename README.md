@@ -141,6 +141,7 @@ const OS = getOS()
 [randomColor]:https://github.com/proYang/outils/blob/master/src/random/randomColor.js
 [randomNum]:https://github.com/proYang/outils/blob/master/src/random/randomNum.js
 
+[isColor]:https://github.com/proYang/outils/blob/master/src/regexp/isColor.js
 [isEmail]:https://github.com/proYang/outils/blob/master/src/regexp/isEmail.js
 [isIdCard]:https://github.com/proYang/outils/blob/master/src/regexp/isIdCard.js
 [isPhoneNum]:https://github.com/proYang/outils/blob/master/src/regexp/isPhoneNum.js
