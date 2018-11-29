@@ -88,6 +88,7 @@ const OS = getOS()
 #### &emsp;&emsp;[randomNum][randomNum]&emsp;&emsp;生成指定范围随机数 
 
 ### Regexp  
+#### &emsp;&emsp;[isColor][isColor]&emsp;&emsp;判断是否为16进制颜色，rgb 或 rgba
 #### &emsp;&emsp;[isEmail][isEmail]&emsp;&emsp;判断是否为邮箱地址 
 #### &emsp;&emsp;[isIdCard][isIdCard]&emsp;&emsp;判断是否为身份证号
 #### &emsp;&emsp;[isPhoneNum][isPhoneNum]&emsp;&emsp;判断是否为手机号  
