@@ -1,8 +1,9 @@
+[![outils](https://cdn.slane.cn//outils-logo-2018-11-09_23-12-54.png)](https://github.com/proYang/outils)
 # outils
 [![npm](https://img.shields.io/npm/v/outils.svg)](https://www.npmjs.com/package/outils) 
-![Build Status](https://travis-ci.org/proYang/outils.svg?branch=master) 
-[![Coverage](https://coveralls.io/repos/github/proYang/outils/badge.svg?branch=master) 
-![LICENSE MIT](https://img.shields.io/npm/l/outils.svg)](https://www.npmjs.com/package/outils) 
+[![Build Status](https://travis-ci.org/proYang/outils.svg?branch=master)](https://travis-ci.org/proYang/outils)
+[![Coverage](https://coveralls.io/repos/github/proYang/outils/badge.svg?branch=master)](https://coveralls.io/github/proYang/outils)
+[![LICENSE MIT](https://img.shields.io/npm/l/outils.svg)](https://www.npmjs.com/package/outils) 
 
  
 前端业务代码工具库  
@@ -11,7 +12,7 @@
 
 业务开发过程中，会经常用到`日期格式化`、`url参数转对象`、`浏览器类型判断`、`节流函数`等常用函数，为避免不同项目多次复制粘贴的麻烦，这里统一封装，并发布到npm，以提高开发效率。如果你也有常用的代码，欢迎为本项目提交pr。
 
-## 安装使用
+## :building_construction:  安装使用
 
 1. 直接下载`min`目录下的[outils.min.js](https://github.com/proYang/outils/blob/master/min/outils.min.js)使用，支持UMD通用模块规范  
 2. 使用npm安装
@@ -45,7 +46,7 @@ const OS = outils.getOS()
 const getOS = require('outils/getOS')
 const OS = getOS()
 ```
-## API文档
+## :package:  API文档
 
 ### Array  
 #### &emsp;&emsp;[arrayEqual][arrayEqual]&emsp;&emsp;判断两个数组是否相等 
@@ -87,6 +88,7 @@ const OS = getOS()
 #### &emsp;&emsp;[randomNum][randomNum]&emsp;&emsp;生成指定范围随机数 
 
 ### Regexp  
+#### &emsp;&emsp;[isColor][isColor]&emsp;&emsp;判断是否为16进制颜色，rgb 或 rgba
 #### &emsp;&emsp;[isEmail][isEmail]&emsp;&emsp;判断是否为邮箱地址 
 #### &emsp;&emsp;[isIdCard][isIdCard]&emsp;&emsp;判断是否为身份证号
 #### &emsp;&emsp;[isPhoneNum][isPhoneNum]&emsp;&emsp;判断是否为手机号  
@@ -140,6 +142,7 @@ const OS = getOS()
 [randomColor]:https://github.com/proYang/outils/blob/master/src/random/randomColor.js
 [randomNum]:https://github.com/proYang/outils/blob/master/src/random/randomNum.js
 
+[isColor]:https://github.com/proYang/outils/blob/master/src/regexp/isColor.js
 [isEmail]:https://github.com/proYang/outils/blob/master/src/regexp/isEmail.js
 [isIdCard]:https://github.com/proYang/outils/blob/master/src/regexp/isIdCard.js
 [isPhoneNum]:https://github.com/proYang/outils/blob/master/src/regexp/isPhoneNum.js
