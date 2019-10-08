@@ -126,4 +126,16 @@ describe('Time API:', function () {
         	assert.deepEqual(outils.timeLeft(startTime, endTime), { d: 0, h: 0, m: 0, s: 30 })
         });
     });
+
+    describe('#monthDays()', function(){
+        it(`outils.monthDays(new Date('2019/10/08')) should return 31`, function(){
+            assert(outils.monthDays(new Date('2019/10/08')) === 31)
+        });
+        it(`outils.monthDays(new Date('2019/02/08')) should return 28`, function(){
+            assert(outils.monthDays(new Date('2019/02/08')) === 28)
+        });
+        it(`outils.monthDays(new Date('2020/02/08')) should return 29`, function(){
+            assert(outils.monthDays(new Date('2020/02/08')) === 29)
+        })
+    })
 })
