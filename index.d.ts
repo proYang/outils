@@ -243,6 +243,7 @@ declare namespace outils {
    * @return {String}
    */
   export function formatPassTime(startTime: Date): string
+
   /**
    * 
    * @desc   格式化现在距${endTime}的剩余时间
@@ -250,6 +251,7 @@ declare namespace outils {
    * @return {String}
    */
   export function formatRemainTime(endTime: Date): string
+
   /**
    * 
    * @desc 是否为闰年
@@ -257,6 +259,7 @@ declare namespace outils {
    * @returns {Boolean}
    */
   export function isLeapYear(year: number): boolean
+
   /**
    * @desc   判断是否为同一天
    * @param  {Date} date1 
@@ -264,6 +267,14 @@ declare namespace outils {
    * @return {Boolean}
    */
   export function isSameDay(date1: Date, date2: Date): boolean
+
+  /**
+  * @desc 获取指定日期月份的总天数
+  * @param {Date} time
+  * @return {Number}
+  */
+  export function monthDays(date: Date): number
+  
   /**
    * @desc ${startTime - endTime}的剩余时间,startTime大于endTime时，均返回0
    * @param { Date | String } startTime

@@ -107,6 +107,7 @@ const OS = getOS()
 #### &emsp;&emsp;[isLeapYear][isLeapYear]&emsp;&emsp;判断是否为闰年
 #### &emsp;&emsp;[isSameDay][isSameDay]&emsp;&emsp;判断是否为同一天
 #### &emsp;&emsp;[timeLeft][timeLeft]&emsp;&emsp;计算${startTime - endTime}的剩余时间
+#### &emsp;&emsp;[monthDays][monthDays]&emsp;&emsp;获取指定日期月份的总天数
 
 ### Url
 #### &emsp;&emsp;[parseQueryString][parseQueryString]&emsp;&emsp;url参数转对象
@@ -157,6 +158,7 @@ const OS = getOS()
 [isLeapYear]:https://github.com/proYang/outils/blob/master/src/time/isLeapYear.js
 [isSameDay]:https://github.com/proYang/outils/blob/master/src/time/isSameDay.js
 [timeLeft]:https://github.com/proYang/outils/blob/master/src/time/timeLeft.js
+[monthDays]:https://github.com/proYang/outils/blob/master/src/time/monthDays.js
 
 [parseQueryString]:https://github.com/proYang/outils/blob/master/src/url/parseQueryString.js
 [stringfyQueryString]:https://github.com/proYang/outils/blob/master/src/url/stringfyQueryString.js
