@@ -136,6 +136,9 @@ describe('Time API:', function () {
         });
         it(`outils.monthDays(new Date('2020/02/08')) should return 29`, function(){
             assert(outils.monthDays(new Date('2020/02/08')) === 29)
-        })
+        });
+        it(`outils.monthDays(new Date('2020/4/1')) should return 30`, function() {
+        	assert(outils.monthDays(new Date('2020/4/1')) === 30)
+        });
     })
 })

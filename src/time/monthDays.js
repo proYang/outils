@@ -5,8 +5,8 @@
 */
 function monthDays(time){
     time = new Date(time);
-    let year = time.getFullYear();
-    let month = time.getMonth() + 1;
+    var year = time.getFullYear();
+    var month = time.getMonth() + 1;
     return new Date(year, month, 0).getDate();
 }
 module.exports = monthDays;
