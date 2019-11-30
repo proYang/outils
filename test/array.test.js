@@ -14,4 +14,19 @@ describe('Array API:', function () {
             assert(outils.arrayEqual(arr, arr))
         });
     });
+
+    describe('#arrayInclude()', function () {
+        it(`outils.arrayInclude([0, 2, 3, 4], [1, 2, 3]) should return false`, function () {
+            assert(!outils.arrayInclude([0, 2, 3, 4], [1, 2, 3]))
+        });
+        it(`outils.arrayInclude([2, 3], [1, 2, 3]) should return true`, function () {
+            assert(outils.arrayInclude([2,3], [1, 2, 3]))
+        });
+        it(`outils.arrayInclude([3, 4], [1, 2, 3]) should return false`, function () {
+            assert(!outils.arrayInclude([3, 4], [1, 2, 3]))
+        });
+        it(`outils.arrayInclude([], []) should return true`, function () {
+            assert(outils.arrayInclude([], []))
+        });
+    })
 });
