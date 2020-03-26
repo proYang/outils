@@ -19,6 +19,7 @@ const offset = require('./dom/offset')
 const scrollTo = require('./dom/scrollTo')
 const setScrollTop = require('./dom/setScrollTop')
 const windowResize = require('./dom/windowResize')
+const imgLazy = require('./dom/imgLazy')
 
 const debounce = require('./function/debounce')
 const throttle = require('./function/throttle')
@@ -30,6 +31,7 @@ const isEmptyObject = require('./object/isEmptyObject')
 
 const randomColor = require('./random/randomColor')
 const randomNum = require('./random/randomNum')
+const randomID = require('./random/randomID')
 
 const isEmail = require('./regexp/isEmail')
 const isIdCard = require('./regexp/isIdCard')
@@ -66,6 +68,7 @@ module.exports = {
     scrollTo,
     setScrollTop,
     windowResize,
+    imgLazy,
 
     debounce,
     throttle,
@@ -77,6 +80,7 @@ module.exports = {
 
     randomColor,
     randomNum,
+    randomID,
 
     isEmail,
     isIdCard,
