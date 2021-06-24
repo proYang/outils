@@ -168,6 +168,15 @@ declare namespace outils {
 
   /**
    * 
+   * @desc  更改对象的键名
+   * @param  {Object} keysMap  源与终的键名枚举
+   * @param  {Object} originMap 需要rename的对象
+   * @return {Object}
+   */
+  export function renameKeys(keysMap: object, originMap: object): object
+
+  /**
+   * 
    * @desc 随机生成颜色
    * @return {String} 
    */

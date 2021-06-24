@@ -82,6 +82,7 @@ const OS = getOS()
 ### Object  
 #### &emsp;&emsp;[deepClone][deepClone]&emsp;&emsp;深拷贝，支持常见类型
 #### &emsp;&emsp;[isEmptyObject][isEmptyObject]&emsp;&emsp;判断Object是否为空
+#### &emsp;&emsp;[renameKeys][renameKeys]&emsp;&emsp;更改对象的键名
 
 ### Random  
 #### &emsp;&emsp;[randomColor][randomColor] &emsp;&emsp;随机生成颜色
@@ -139,6 +140,7 @@ const OS = getOS()
 
 [deepClone]:https://github.com/proYang/outils/blob/master/src/object/deepClone.js
 [isEmptyObject]:https://github.com/proYang/outils/blob/master/src/object/isEmptyObject.js
+[renameKeys]:https://github.com/proYang/outils/blob/master/src/object/renameKeys.js
 
 [randomColor]:https://github.com/proYang/outils/blob/master/src/random/randomColor.js
 [randomNum]:https://github.com/proYang/outils/blob/master/src/random/randomNum.js

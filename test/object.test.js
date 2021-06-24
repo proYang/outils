@@ -53,4 +53,24 @@ describe('Object API:', function () {
             assert.notEqual(outils.isEmptyObject([]), true)
         });
     });
+
+    describe('#renameKeys()', function () {
+        const objTest = {
+           id: 1,
+           name: '测试',
+           age: 20
+        };
+        const convertMap = {
+          id: 'renameID',
+          name: 'renameName',
+          age: 'renameAge',
+        }
+        it(`outils.renameKeys({}, {}) should return {}`, function () {
+            const nullJudge = outils.renameKeys({}, {})
+            assert.equal(JSON.stringify(nullJudge), '{}')
+        });
+        it(`outils.renameKeys(convertMap, objTest) should return true`, function () {
+            assert.deepEqual(outils.renameKeys(convertMap, objTest), { renameID: 1, renameName: '测试', renameAge: 20 })
+        });
+    });
 })
