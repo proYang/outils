@@ -24,6 +24,13 @@
       var OS = outils.getOS()
   </script>
 ```
+### CDN:  
+```html
+  <script src="https://cdn.jsdelivr.net/npm/outils/min/outils.min.js"></script>
+  <script>
+      var OS = otuils.getOS()
+  </script>
+```
 
 ### npm:
 ``` bash
