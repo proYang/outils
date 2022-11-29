@@ -15,6 +15,4 @@ function arrayInclude(arr1, arr2) {
 	})
 }
 
-console.log(arrayInclude([0, 2, 3, 4], [1, 2, 3]))
-
 module.exports = arrayInclude
